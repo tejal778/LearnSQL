@@ -1,0 +1,6 @@
+SELECT statements are used to fetch data from a database. In the statement below, SELECT returns all data in the name column of the celebs table.
+
+SELECT name FROM celebs;  -> Gives the column 
+
+SELECT * FROM celebs; -> Select all data from a table in one go
+
