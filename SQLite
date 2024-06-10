@@ -1,0 +1,13 @@
+Reference - https://www.sqlite.org/index.html
+
+What is SQLite?
+
+SQLite is a database engine. 
+It is software that allows users to interact with a relational database. 
+In SQLite, a database is stored in a single file — a trait that distinguishes it from other database engines. 
+This fact allows for a great deal of accessibility: copying a database is no more complicated than copying the file that stores the data, sharing a database can mean sending an email attachment.
+
+Uses for SQLite
+
+SQLite is used worldwide for testing, development, and in any other scenario where it makes sense for the database to be on the same disk as the application code.
+
