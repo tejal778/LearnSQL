@@ -1,0 +1,69 @@
+Intro to SQL:
+
+SQL, Structured Query Language, is a programming language designed to manage data stored in relational databases. 
+SQL operates through simple, declarative statements. This keeps data accurate and secure, and helps maintain the integrity of databases, regardless of size.
+
+https://www.codecademy.com/resources/docs/general/database/relational-database
+
+A relational database is a store of data organized in tables made of columns and rows, and the relationships between those tables. 
+The software that controls a relational database is called a relational database management system (RDBMS) and typically allows management and updates to the database through an implementation of the structured query language (SQL).
+
+Examples of Relational Database Management Systems:
+MySQL is a free open-source RDBMS that is used for many database-driven web applications such as Drupal, Joomla and WordPress.
+SQLite is a C library used to embed relational database functionality into software packages.
+PostgreSQL is a free open-source RDBMS that emphasizes extensibility and compliance to the ANSI SQL standards.
+Microsoft SQL Server is a server-based RDBMS from Microsoft typically used as a back-end for applications running on a network.
+Microsoft Access is part of the Microsoft 365 suite of applications. It combines an RDBMS with a graphical user interface and programming tools, allowing application development inside the software.
+Microsoft Azure SQL Database is a managed cloud-based RDBMS provided as part of Microsoft Azure.
+
+https://www.codecademy.com/article/what-is-rdbms-sql
+
+MySQL
+MySQL is the most popular open source SQL database. It is typically used for web application development, and often accessed using PHP.
+Some of the disadvantages are that it has been known to suffer from poor performance when scaling, open source development has lagged since Oracle has taken control of MySQL, and it does not include some advanced features that developers may be used to.
+
+PostgreSQL
+PostgreSQL is an open source SQL database that is not controlled by any corporation. It is typically used for web application development.
+The main disadvantage of PostgreSQL is that it can be slower in performance than other databases such as MySQL. It is also slightly less popular than MySQL.
+
+Oracle DB
+Oracle Corporation owns Oracle Database, and the code is not open sourced.
+Oracle DB is for large applications, particularly in the banking industry. Most of the world’s top banks run Oracle applications because Oracle offers a powerful combination of technology and comprehensive, pre-integrated business applications, including essential functionality built specifically for banks.
+The main disadvantage of using Oracle is that it is not free to use like its open source competitors and can be quite expensive.
+
+SQL Server
+Microsoft owns SQL Server. Like Oracle DB, the code is close sourced.
+Large enterprise applications mostly use SQL Server.
+Microsoft offers a free entry-level version called Express but can become very expensive as you scale your application.
+
+Using An RDBMS On Codecademy:
+On Codecademy, we use both SQLite and PostgreSQL.
+
+File extensions — when working with databases on Codecademy, take a look at the name of the file you’re writing in. If your file ends in .sqlite, you’re using a SQLite database. 
+If your file ends in .sql, you’re working with PostgreSQL.
+
+Data types — You’ll learn about data types very early into learning a RDBMS. One thing to note is that SQLite and PostgreSQL have slightly different data types. 
+For example, if you want to store text in a SQLite database, you’ll use the TEXT data type. If you’re working with PostgreSQL, you have many more options. 
+You could use varchar(n), char(n), or text. Each type has its own subtle differences. This is a good example of PostgreSQL being slightly more robust than SQLite, but the core concepts remaining the same.
+
+Built-in tables — As you work your way through more complicated lessons on databases, you’ll start to learn how to access built-in tables. 
+For example, if you take our lesson on indexes, you’ll learn how to look at the table that the system automatically creates to keep track of what indexes exist. 
+Depending on which RDBMS system you are using (in that lesson we’re using PostgreSQL), the syntax for doing that will be different. Any time you’re writing SQL about the database itself, rather than the data, that syntax will likely be unique to the RDBMS you’re using.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
