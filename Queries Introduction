@@ -1,0 +1,63 @@
+One of the core purposes of the SQL language is to retrieve information stored in a database. This is commonly referred to as querying.
+
+SELECT:
+
+SELECT is used every time you want to query data from a database and * means all columns.
+Suppose we are only interested in two of the columns. We can select individual columns by their names (separated by a comma):
+
+SELECT column1, column2 
+FROM table_name;
+
+AS:
+
+SELECT name AS 'Titles'
+FROM movies;
+
+AS is a keyword in SQL that allows you to rename a column or table using an alias. 
+The new name can be anything you want as long as you put it inside of single quotes. Here we renamed the name column as Titles.
+
+DISTINCT:
+
+DISTINCT is used to return unique values in the output. It filters out all duplicate values in the specified column(s).
+For instance,
+SELECT tools 
+FROM inventory;
+
+might produce:
+tools
+Hammer
+Nails
+Nails
+Nails
+
+By adding DISTINCT before the column name:
+SELECT DISTINCT tools 
+FROM inventory;
+
+the result would now be:
+tools
+Hammer
+Nails
+
+WHERE:
+We can restrict our query results using the WHERE clause in order to obtain only the information we want.
+
+Following this format, the statement below filters the result set to only include top rated movies (IMDb ratings greater than 8):
+SELECT *
+FROM movies
+WHERE imdb_rating > 8;
+
+The WHERE clause filters the result set to only include rows where the following condition is true.
+
+imdb_rating > 8 is the condition. Here, only rows with a value greater than 8 in the imdb_rating column will be returned.
+
+The > is an operator. Operators create a condition that can be evaluated as either true or false.
+
+Comparison operators used with the WHERE clause are:
+
+= equal to
+!= not equal to
+> greater than
+< less than
+>= greater than or equal to
+<= less than or equal to
