@@ -1,0 +1,33 @@
+LIKE can be a useful operator when you want to compare similar values.
+
+EXAMPLE:
+
+The movies table contains two films with similar titles, ‘Se7en’ and ‘Seven’.
+How could we select all movies that start with ‘Se’ and end with ‘en’ and have exactly one character in the middle?
+
+SELECT * 
+FROM movies
+WHERE name LIKE 'Se_en';
+
+LIKE is a special operator used with the WHERE clause to search for a specific pattern in a column.
+name LIKE 'Se_en' is a condition evaluating the name column for a specific pattern.
+Se_en represents a pattern with a wildcard character.
+_ can be replaced by any value
+
+
+The percentage sign % is another wildcard character that can be used with LIKE.
+
+EXAMPLE:
+
+This statement below filters the result set to only include movies with names that begin with the letter ‘A’:
+
+SELECT * 
+FROM movies
+WHERE name LIKE 'A%';
+
+% is a wildcard character that matches zero or more missing characters in the pattern. For example:
+
+A% matches all movies with names that begin with letter ‘A’
+%a matches all movies that end with ‘a’
+
+LIKE is not case sensitive.
