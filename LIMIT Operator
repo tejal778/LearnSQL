@@ -1,0 +1,20 @@
+In the case where SQL tables have hundreds of thousands of rows it is important to limit these. 
+LIMIT operator does this
+
+Example:
+SELECT *
+FROM movies
+LIMIT 10;
+
+LIMIT is a clause that lets you specify the maximum number of rows the result set will have. This saves space on our screen and makes our queries run faster.
+Here, we specify that the result set can’t have more than 10 rows.
+LIMIT always goes at the very end of the query. Also, it is not supported in all SQL databases.
+
+Example:
+
+SELECT * 
+FROM movies
+ORDER BY imdb_rating DESC
+LIMIT 3;
+
+Write a query that returns the top 3 highest rated movies.
