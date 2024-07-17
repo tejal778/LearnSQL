@@ -78,4 +78,4 @@ SELECT CASE
 FROM hacker_news
 GROUP BY 1;
 
-8. 
+
