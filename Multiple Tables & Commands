@@ -1,0 +1,113 @@
+Example:
+
+Imagine that we’re running a magazine company where users can have different types of subscriptions to different products. 
+Different subscriptions might have many different properties. Each customer would also have lots of associated information.
+
+We could have one table with all of the following information:
+
+order_id
+customer_id
+customer_name
+customer_address
+subscription_id
+subscription_description
+subscription_monthly_price
+subscription_length
+purchase_date
+
+Most of these data might be repeated so we will split this data into 3 tables:
+
+1. orders would contain just the information necessary to describe what was ordered:
+
+order_id, customer_id, subscription_id, purchase_date
+2. subscriptions would contain the information to describe each type of subscription:
+
+subscription_id, description, price_per_month, subscription_length
+3. customers would contain the information for each customer:
+
+customer_id, customer_name, address
+
+//SQL operates through declarative statements featuring commands.
+   Here’s an appendix of commonly used commands//
+
+Commands :
+
+ALTER TABLE
+Adds, deletes, modifies or changes the data type of a column in a table.
+
+AS
+Renames a column or table with an alias for display, does not permanently change table/column names in the database.
+
+CASE
+Returns different output based on the conditions of each statement.
+
+CREATE INDEX
+Creates an index on existing columns in a table. Indexes cannot be seen by the user of a database; they just help speed up queries.
+
+CREATE TABLE
+Creates a new table within a database.
+
+CREATE VIEW
+Creates a virtual table based on a saved query.
+
+CROSS JOIN
+Returns a table with all possible combinations of every row from the first table and every row from the second table.
+
+DELETE
+Removes existing row(s) from a table. If a WHERE statement is excluded, all rows in the table will be deleted.
+
+DROP TABLE
+Deletes an existing table in a database.
+
+FULL OUTER JOIN
+Combines rows from different tables even if the JOIN condition is not met.
+
+GROUP BY
+Groups a result set based on an aggregate function (COUNT(), MIN(), MAX(), SUM(), AVG()). It lists the number in each group.
+
+HAVING
+A conditional statement similar to WHERE but used with aggregate functions (COUNT(), MIN(), MAX(), SUM(), AVG()).
+
+INNER JOIN
+Returns all rows that have matching values in both tables and omits non-matching rows.
+
+INSERT INTO
+Creates and places new rows into a table.
+
+LEFT JOIN
+Combines matching rows with rows from the left-side table.
+
+LIMIT
+Specifies, or limits, the maximum number of rows the result set will have.
+
+ORDER BY
+Sorts the result set by a particular column either alphabetically or numerically.
+
+RIGHT JOIN
+Combines matching rows with rows from the right-side table.
+
+ROUND
+Rounds a value to the nearest integer or to a specific number of decimals if an optional value is provided.
+
+SELECT
+Every SQL query will begin with the SELECT command to fetch data from one or more tables.
+
+SELECT DISTINCT
+Returns unique values in the specified column(s).
+
+SELECT TOP
+Returns a specified number of rows from the top of the result.
+
+UNION
+Combines the results of two or more SELECT queries.
+
+UPDATE
+Edits row(s) in a table.
+
+WHERE
+Filters records (rows) that match a certain condition.
+
+WITH
+Stores the result of a query in a temporary table using an alias.
+
+
