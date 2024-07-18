@@ -1,0 +1,45 @@
+When we perform a simple JOIN (often called an inner join) our result only includes rows that match our ON condition.
+Consider the following animation, which illustrates an inner join of two tables on table1.c2 = table2.c2
+The first and last rows have matching values of c2. The middle rows do not match. The final result has all values from the first and last rows but does not include the non-matching middle row.
+
+EXAMPLE:
+Suppose we are working for The Codecademy Times, a newspaper with two types of subscriptions:
+
+print newspaper
+online articles
+
+Some users subscribe to just the newspaper, some subscribe to just the online edition, and some subscribe to both.
+There is a newspaper table that contains information about the newspaper subscribers.
+Count the number of subscribers who get a print newspaper using COUNT().
+
+CODE:
+SELECT COUNT(*)
+FROM newspaper;
+
+EXAMPLE:
+There is also an online table that contains information about the online subscribers.
+Count the number of subscribers who get an online newspaper using COUNT().
+
+CODE:
+SELECT COUNT(*)
+FROM online;
+
+EXAMPLE:
+Join newspaper table and online table on their id columns (the unique ID of the subscriber).
+How many rows are in this table?
+
+CODE:
+SELECT COUNT(*)
+FROM newspaper
+JOIN online
+ON newspaper.id = online.id;
+
+
+OUTPUT FOR ALL 3:
+Query Results
+COUNT(*)
+60
+COUNT(*)
+65
+COUNT(*)
+50
